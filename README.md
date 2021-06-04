@@ -19,7 +19,7 @@ Develop a referrals feature using Laravel 8 and React. This feature is heavily i
 * Develop a new page `<domain>/referrals` to show a form where the user can input multiple emails to invite.
 * This page should be written in react or should use a react component where the input is a multi-select _similar to dropbox_.
 * Send an email notification to the invited email. The email's content doesn't have to be fancy, it can contain a simple instruction and link to the registration page with the referral link `<domain>/?refer=<code>`
-* For each successful and new registrations with referral, increase the number of referrals count of the referrer.
+* Track successful referrals - when a user signs up from a referral link, increase the number of referrals count of the referrer.
 
 ## Notes
 * Users who are invited already cannot be invited again.
@@ -29,7 +29,22 @@ Develop a referrals feature using Laravel 8 and React. This feature is heavily i
 ## Bonus Points
 * Create a new page for an admin user `<domain>/admin/referrals` that shows the list of all the referrals made in the system. Columns can be referrer, email referred, date, status
 
-## Sample Invite Email
+## Invite Email
+**Subject**
+<first_name> recommends ContactOut
+
+**Body**
+<first_name> has been using ContactOut, and thinks it could be of use for you.  
+  
+Here’s their invitation link for you:  
+<referral_link>
+  
+ContactOut gives you access to contact details for about 75% of the world’s professionals.  
+  
+Great for recruiting, sales, and marketing outreach.  
+  
+It’s an extension that works right on top of LinkedIn.  
+  
 Here’s their invitation link again:  
 <referral_link>
 
